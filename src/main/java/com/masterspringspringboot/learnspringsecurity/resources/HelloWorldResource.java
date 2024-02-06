@@ -1,4 +1,4 @@
-package com.masterspringspringboot.learnspringsecurity.helloworld;
+package com.masterspringspringboot.learnspringsecurity.resources;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
