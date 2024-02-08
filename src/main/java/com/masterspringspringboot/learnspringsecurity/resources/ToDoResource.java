@@ -1,16 +1,16 @@
 package com.masterspringspringboot.learnspringsecurity.resources;
 
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.logging.Logger;
 
 @RestController
 public class ToDoResource {
 
     private static final List<ToDo> TODOS_LIST= List.of(new ToDo("admin", "toDo1"), new ToDo("admin", "toDo2"));
-    Logger logger= (Logger) LoggerFactory.getLogger(getClass());
+    Logger logger= LoggerFactory.getLogger(getClass());
 
     @GetMapping("/todos")
     public List<ToDo> retrieveAllToDos(){
